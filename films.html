@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Head START -->
+<head>
+	<!-- Кодировка документа -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Заголовок страницы -->
+	<title>Киномонстр - фильмы</title>
+	<!-- Описание страницы -->
+	<meta name="description" content="Киномонстр - это портал о кино">
+	<!-- Ключевые слова -->
+	<meta name="keywords" content="Фильмы, фильмы онлайн, hd" />
+	<!-- Подключаем стили -->
+	<link rel="stylesheet" href="essets/css/style.css">
+</head>
+<!-- Head END -->
+
+<!-- Body START -->
+<body>
+	<div class="main">
+		<!-- Шапка сайта -->
+		<div class="header">
+			<!-- Логотип -->
+			<div class="logo">
+				<!-- Текст логотипа -->
+				<div class="logo_text">
+					<h1><a href="index.html">КиноМонстр</a></h1>
+					<h2>Кино - наша страсть!</h2>
+				</div>
+			</div>
+			<!-- Меню -->
+			<div class="menubar">
+				<ul class="menu">
+					<li><a href="index.html">Главная</a></li>
+					<li class="selected"> <a href="#">Фильмы</a></li>
+					<li> <a href="serials.html">Сериалы</a></li>
+					<li> <a href="rating.html">Рейтинг фильмов</a></li>
+					<li> <a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- Меню END -->
+		</div>
+		<!-- Основной контент сайта -->
+		<div class="site_content">
+			<!-- Правый блок сайта поиск-->
+			<div class="sidebar_container">
+				<div class="sidebar">
+					<h2>Поиск</h2>
+					<form method="post" action="#" id="search_form">
+						<input type="search" name="serch_field" placeholder="Ваш запрос" />
+						<input type="submit" class="btn" value="найти" />
+					</form>
+				</div>
+				<!-- Правый блок сайта вход -->
+				<div class="sidebar">
+					<h2>Вход</h2>
+					<form method="post" action="#" id="login">
+						<input type="text" name="login_field" placeholder="логин" />
+						<input type="password" name="password_field" placeholder="пароль" />
+						<input type="submit" class="btn" value="вход" />
+						<div class="lables_passreg_text">
+							<span><a href="#">забыли пароль?</a></span> | <span><a href="#">регистрация</a></span>
+						</div>
+					</form>
+				</div>
+				<div class="sidebar">
+					<h2>Новости</h2>
+					<span>19.03.2020</span>
+					<p>Мы запустили расширенный поиск</p>
+					<a href="#">читать</a>
+				</div>
+				<div class="sidebar">
+					<h2>Рейтинг фильмов</h2>
+					<ul>
+						<li><a href="show.html">Интерстеллар</a><span class="reting_sidebar">8.1</span></li>
+						<li><a href="matrix.html">Матрица</a><span class="reting_sidebar">8.0</span></li>
+						<li><a href="max.html">Безумный Макс</a><span class="reting_sidebar">7.5</span></li>
+						<li><a href="cloud.html">Облачный атлас</a><span class="reting_sidebar">7.4</span></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="content">
+
+				<div class="info_film">
+					<img src="essets/img/inter.png" alt="">
+					Наше время на Земле подошло к концу, команда исследователей берет на себя самую важную миссию в истории человечества; путешествуя за пределами нашей галактики, чтобы узнать есть ли у человечества будущее среди звезд.
+					<div class="button"><a href="show.html">Смотреть</a></div>
+				</div>
+
+				<div class="info_film">
+					<img src="essets/img/max.png" alt="">
+					В недалёком будущем, после крупной катастрофы, поразившей нашу урбанистическую цивилизацию, вся жизнь сосредоточилась вдоль бесчисленных магистралей. Дорога стала способом существования. И дала многим возможность проявлять свои самые жестокие инстинкты. Банда байкеров на мощных мотоциклах, желая рассчитаться за своего убитого товарища, преследует молодого полицейского Макса.
+					<div class="button"><a href="max.html">Смотреть</a></div>
+				</div>
+
+				<div class="info_film">
+					<img src="essets/img/matrix.png" alt="">
+					Пока армия Машин пытается уничтожить Зион, его жители из последних сил держат оборону. Но удастся ли им предотвратить полное вторжение в город кишащей орды беспощадных машин до того, как Нео соберет все свои силы и положит конец войне?
+					<div class="button"><a href="matrix.html">Смотреть</a></div>
+				</div>
+
+				<div class="info_film">
+					<img src="essets/img/cloud.png" alt="">
+					Шесть историй — пять реинкарнаций, происходящих в разное время, тесно переплетаются между собой…
+
+					<div class="button"><a href="cloud.html">Смотреть</a></div>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="index.html">Главная</a> |
+				<a href="films.html">Фильмы</a> |
+				<a href="serials.html">Сериалы</a> |
+				<a href="rating.html">Рейтинг фильмов</a> |
+				<a href="contact.html">Контакты</a> 
+			</p>
+			<p>2020-2021</p>
+		</div>
+	</div>
+</body>
+<!-- Body END -->
+</html>
