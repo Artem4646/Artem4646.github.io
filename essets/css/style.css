@@ -1,0 +1,578 @@
+ /*Обнуление*/
+* {
+	/*Оступы*/
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1.2em;
+	background-color: #fff;
+	color: #555;
+}
+
+p {
+	padding: 0 6px 20px 0;
+	line-height: 1.7em;
+}
+
+/*Стили для всех инпутов*/
+input[type="text"], input[type="password"], input[type="search"] {
+	color: #5d5d5d;
+	width: 60%;
+	padding: 8px;
+}
+
+input, textarea {
+	/*Убираем подсвечивание поля ввода*/
+	outline: none;
+	/*Убираем рамку поля ввода*/
+	border: none;
+	/*Рамка вокруг дива толщиной 1рх*/
+	border: solid 1px #f2f2f2;
+}
+
+h1, h2 {
+	font: normal 170% 'century gothic', arial;
+	margin: 0 0 15px 0;
+	padding: 15px 0 5px 0;
+	color: #000;
+}
+
+h2 {
+	font-size: 140%;
+}
+
+a, a:hover {
+	outline: none;
+	text-decoration: underline;
+	color: #aeb002;
+}
+
+ul {
+	margin: 2px 0 22px 17px;
+}
+
+ul li {
+	margin: 0 0 6px 0;
+	padding: 0 0 4px 5px;
+	line-height: 1.5em;
+}
+
+/*Для шапки сайта*/
+.header {
+	/*Цвет фона*/
+	background-color: darkslateblue;
+	/*Высота*/
+	height: 177px;
+	/*Размер шрифта*/
+	font-size: 0.8em;
+	/*Внешние отступы слева*/
+	margin-left: 0px;
+	/*Внешние отступы справа*/
+	margin-right: 0px;
+	min-width: 900px;
+}
+
+/*Для всех дивов*/
+.main, .logo, .menubar, .site_content, .footer {
+	/*Отступ слева и справа автоматически расчитан браузером*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Логотип*/
+.logo {
+	/*Ширина*/
+	width: 880px;
+	/*Внутренний отступ снизу от элемента*/
+	padding-bottom: 40px;
+}
+
+/*Обращаемся к заголовкам h1,h2 которые находятся в logo*/
+.logo h1, .logo h2 {
+	/*Шрифт*/
+	font: normal 300% 'century gothic', arial, sans-serif;
+	/*Внешний отступ*/
+	margin: 0 0 0 9px;
+}
+
+/*Для заголовка h1*/
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
+	/*Внутренний отступ*/
+	padding: 22px 0 0 0;
+	/*Цвет текста*/
+	color: #fff;
+	/*Интервал между символами*/
+	letter-spacing: 0.1em;
+	/*Обычный текст (убираем подчеркивание сылки)*/
+	text-decoration: none;
+}
+
+/*Для заголовка h2*/
+.logo_text h2 {
+	/*Размер шрифта*/
+	font-size: 0.9em;
+	/*Внутренний отступ*/
+	padding: 4px 0 0 0;
+	/*Цвет текста*/
+	color: #999;
+}
+
+/*Для общего меню*/
+.menubar {
+	/*Ширина*/
+	width: 900px;
+	/*Высота*/
+	height: 46px;
+}
+
+/*Для меню*/
+ul.menu {
+	/*Прижимаем к правому краю*/
+	float: right;
+}
+
+/*Для элементов меню*/
+ul.menu li {
+	/*Прижимаем к левому краю*/
+	float: left;
+	/*Внутренний отступ*/
+	padding: 0 0 0 9px;
+	/*Убираем точки списка*/
+	list-style: none;
+	/*Внешний оступ*/
+	margin: 1px 2px 0 0;
+}
+
+/*Для ссылок меню*/
+ul.menu li a {
+	/*Шрифт*/
+	font: normal 100% 'trebuched ms', sans-serif;
+	/*Превращаем не блочный элемент в блочный*/
+	display: block;
+	/*Высота*/
+	height: 20px;
+	/*Внутренний отступ*/
+	padding: 6px 35px 5px 28px;
+	/*Цвет текста*/
+	color: #fff;
+	/*Убираем подчеркивание ссылок*/
+	text-decoration: none;
+}
+
+/*Для активной (подсвечиваемой) ссылки*/
+ul.menu li.selected a {
+	/*Цвет активной ссылки*/
+	color: #aeb002;
+}
+
+/*Изменяем цвет ссылки при наведении*/
+ul.menu li a:hover {
+	/*Цвет текста*/
+	color: #e4ec04;
+}
+
+hr {
+	border: solid 1px #f3f3f3;
+	width: 100%;
+}
+
+/*Для основного контента сайта*/
+.site_content {
+	/*Ширина*/
+	width: 880px;
+	/*Скрываем контент который выходит за рамки заданного размера*/
+	overflow: hidden;
+	/*Отступ сверху и по сторонам авто*/
+	margin: 20px auto 0 auto;
+	/*Цвет фона для блока*/
+	background-color: white;
+}
+
+/*Для правого блока сайта*/
+.sidebar_container {
+	/*Прижимаем к правому краю*/
+	float: right;
+	/*Ширина*/
+	width: 224px;
+}
+/*Стиль для блока поиска*/
+.sidebar {
+	/*Прижимаем к правому краю*/
+	float: right;
+	/*Ширина*/
+	width: 222px;
+	/*Внутренний отступ*/
+	padding: 5%;
+	/*Внешний отступ снизу на 16рх*/
+	margin: 0 0 16px 0;
+	/*Рамка вокруг дива толщиной 1рх*/
+	border: solid 1px #f2f2f2;
+	/*Для округления углов рамки*/
+	border-radius: 5%;
+	/*Цвет заливки блока*/
+	background-color: #f9f9f9;
+}
+
+/*Стиль для кнопки найти*/
+.btn {
+	padding: 8px;
+	background-color: white;
+	cursor: pointer;
+}
+
+/*Для слова поиск*/
+.sidebar h2 {
+	color: #136cb2;
+}
+
+.lables_passreg_text {
+	font-size: 0.7em;
+	margin-top: 3%;
+	margin-left: 2%;
+}
+
+.sidebar ul {
+	margin: 0;
+}
+
+.sidebar ul li {
+	list-style-type: none;
+	margin: 0 0 0 0;
+}
+
+.sidebar .reting_sidebar {
+	float: right;
+}
+
+.content {
+	text-align: left;
+	width: 620px;
+	padding: 0 0 0 5px;
+	float: left;
+}
+
+.content a {
+	text-decoration: none;
+}
+
+.films_block {
+	margin-bottom: 5%;
+}
+
+.films_block img {
+	border-radius: 5px;
+	border: solid 5px #dad7d5;
+	width: 22%;
+}
+
+.posts .posts_content {
+	font-size: 0.8em;
+}
+
+.info_film_page {
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+
+.info_film_page .label {
+	font-size: 1.2em;
+}
+
+.info_film_page .value {
+	font-size: 1em;
+	color: #49945a;
+	margin-right: 3%;
+}
+
+.description_film {
+	margin-bottom: 2%;
+}
+
+.description_film img {
+	float: left;
+	margin-right: 2%;
+	border-radius: 5px;
+	border: solid 5px #dad7d5;
+}
+
+.reviews {
+	margin-bottom: 4%;
+	font-size: 0.9em;
+}
+
+.review_name {
+	background-color: #7268ad;
+	color: white;
+	padding: 1%;
+	/*Задаем скругление бордера который находится сверху слева*/
+	border-top-left-radius: 5px;
+	/*Задаем скругление бордера который находится сверху справа*/
+	border-top-right-radius: 5px;
+}
+
+.review_text {
+	padding: 2% 0 2% 2%;
+}
+
+.send {
+	margin-bottom: 4%;
+}
+
+.send input[type="text"], textarea {
+	border: solid 1px #c3c3c3;
+	margin-bottom: 2%;
+}
+
+.send input[type="text"] {
+	width: 98%;
+}
+
+.send_contact input[type="text"] {
+	width: 500px;
+}
+
+.send textarea {
+	width: 624px;
+	height: 200px;
+}
+
+.send_contact textarea {
+	width: 516px;
+}
+
+.send input[type="submit"] {
+	background-color: #7268ad;
+	padding: 3%;
+	color: white;
+	border-radius: 5px;
+}
+
+.info_film {
+	margin-bottom: 5%;
+	background-color: #f9f9f9;
+	padding: 5%;
+	height: 270px;
+}
+
+.info_film img {
+	float: left;
+	margin-right: 2%;
+	border-radius: 5px;
+	border: solid 5px #dad7d5;
+	width: 25%
+}
+
+.button {
+	background-color: #7268ad;
+	padding: 2%;
+	color: white;
+	border-radius: 5px;
+	float: right;
+	margin-top: 5%;
+	/*Фиксируем кнопку*/
+	clear: both;
+	font-size: 0.8em;
+}
+
+.button a {
+	color: white;
+}
+
+table {
+	width: 100%;
+	border: solid 1px #f4f4f4;
+}
+
+td {
+	padding: 2%;
+	border: solid 1px #f4f4f4;
+}
+
+td img {
+	width: 60px;
+	vertical-align: middle;
+}
+
+.center {
+	text-align: center;
+}
+
+.rating {
+	font-weight: bold;
+}
+
+.footer {
+	width: 100%;
+	height: 100px;
+	padding: 28px 0 5px 0;
+	text-align: center;
+	background-color: darkslateblue;
+	color: #a8aa94;
+	margin-left: 0px;
+	margin-right: 0px;
+	min-width: 900px;
+}
+
+.footer a {
+	color: #a8aa94;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer p {
+	padding: 0 0 10px 0;
+}
+
+/*CSS Mobile*/
+
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+.header {
+	background-color: #257965;
+	min-width: 100%;
+	height: 20%;
+	text-align: center;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.site_content {
+		width: 100%;
+	}
+
+	.menubar {
+		width: 100%;
+		height: 100%;
+	}
+
+	.content {
+		width: 100%;
+		text-align: center;
+	}
+
+	.site_content {
+		width: 100%;
+		text-align: center;
+	}
+
+	.sidebar_container {
+		display: none;
+	}
+
+	.footer {
+		display: none;
+	}
+
+	ul.menu {
+		float: none;
+	}
+
+	ul.menu li {
+		margin: 0;
+		padding: 0;
+		float: none;
+	}
+
+	.logo h1 {
+		font: normal 235% 'century gothic', arial, sans-serif;
+	}
+
+	.logo h2 {
+		font: normal 100% 'century gothic', arial, sans-serif;
+		color: white;
+	}
+
+	.content h1, h2 {
+		font: normal 110% 'century gothic', arial;
+	}
+
+	.films_block img {
+		width: 43%;
+	}
+
+	.posts_content p {
+		line-height: 1.5em;
+		padding: 3%;
+		text-align: left;
+	}
+
+	.posts p {
+		font-size: 120%;
+	}
+
+	/*Films page*/
+	.info_film {
+		float: none;
+		height: 100%;
+	}
+
+	.info_film img {
+		width: 90%;
+		margin-bottom: 5%;
+	}
+
+	.button {
+		float: none;
+	}
+
+	/*Rating page*/
+	table {
+		display: block;
+	}
+
+	th {
+		font-size: 75%;
+	}
+
+	td {
+		padding: 0;
+		margin: 0;
+		font-size: 95%;
+		text-align: left;
+	}
+
+	/*Show page*/
+	iframe {
+		width: 88%;
+		height: 100%;
+	}
+
+	.description_film {
+		width: 90%;
+		text-align: left;
+		margin-left: 2%;
+	}
+
+	.description_film img {
+		float: none;
+		width: 73%;
+		display: block;
+		margin: 0;
+		padding: 0;
+		margin-left: 11%;
+		margin-bottom: 7%;
+	}
+
+	.reviews {
+		text-align: left;
+		width: 96%;
+	}
+
+	.send input[type="text"] {
+		width: 80%;
+	}
+
+	.send textarea {
+		width: 85%;
+	}
+}
